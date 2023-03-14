@@ -1,0 +1,88 @@
+{
+    "Rules":[ 
+        { 
+           "SettingName":"msedge",
+           "Operator":"IsEquals",
+           "DataType":"String",
+           "Operand":"Running",
+           "MoreInfoUrl":"https://www.microsoftedgeinsider.com/en-us/download/?platform=linux",
+           "RemediationStrings":[ 
+              { 
+                 "Language": "en_US",
+                 "Title": "Microsoft Edge Not Running",
+                 "Description": "Please ensure that Microsoft Edge is running at all times"
+              }
+           ]
+         },
+         { 
+            "SettingName":"gnome-shell",
+            "Operator":"IsEquals",
+            "DataType":"String",
+            "Operand":"Running",
+            "MoreInfoUrl":"https://www.gnome.org/",
+            "RemediationStrings":[ 
+               { 
+                  "Language": "en_US",
+                  "Title": "Gnome Shell Not Running",
+                  "Description": "Please ensure that Gnome Shell is running"
+               }
+            ]
+         },
+         { 
+            "SettingName":"pro-Subscription",
+            "Operator":"IsEquals",
+            "DataType":"String",
+            "Operand":"attached",
+            "MoreInfoUrl":"https://ubuntu.com/pro/",
+            "RemediationStrings":[ 
+               { 
+                  "Language": "en_US",
+                  "Title": "Ubuntu Pro is not enabled",
+                  "Description": "Please attach an Ubuntu Pro subscription to the machine"
+               }
+            ]
+         },
+         { 
+            "SettingName":"livepatch",
+            "Operator":"IsEquals",
+            "DataType":"String",
+            "Operand":"enabled",
+            "MoreInfoUrl":"https://ubuntu.com/security/livepatch/",
+            "RemediationStrings":[ 
+               { 
+                  "Language": "en_US",
+                  "Title": "Livepatch not enabled",
+                  "Description": "Please enable the Livepatch security service"
+               }
+            ]
+         },
+         { 
+            "SettingName":"esm-apps",
+            "Operator":"IsEquals",
+            "DataType":"String",
+            "Operand":"enabled",
+            "MoreInfoUrl":"https://ubuntu.com/pro",
+            "RemediationStrings":[ 
+               { 
+                  "Language": "en_US",
+                  "Title": "esm-apps not enabled",
+                  "Description": "Please enable the esm-apps security service"
+               }
+            ]
+         },
+         { 
+            "SettingName":"esm-infra",
+            "Operator":"IsEquals",
+            "DataType":"String",
+            "Operand":"enabled",
+            "MoreInfoUrl":"https://ubuntu.com/pro",
+            "RemediationStrings":[ 
+               { 
+                  "Language": "en_US",
+                  "Title": "esm-apps not enabled",
+                  "Description": "Please enable the esm-infra security service"
+               }
+            ]
+         }
+     ]
+}
